@@ -1,6 +1,6 @@
-# Project Title
+# WorkWise
 
-![Project Logo/Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinnaxis.com%2F%3Fk%3Dexpense-manager-app-how-to-use-it-small-business-ee-PPwj1Qty&psig=AOvVaw3HueNtTApI3ej2i4rl5ycq&ust=1713377240355000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOihwuOpx4UDFQAAAAAdAAAAABAJ)
+![Project Logo/Image](/logo.jpg)
 
 A Django REST Framework backend for managing job earnings and expenses, with user registration and login functionality.
 
