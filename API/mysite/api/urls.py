@@ -2,10 +2,7 @@ from django.urls import path # type: ignore
 from . import views
 
 urlpatterns = [
-    path("blogposts/", views.BlogPostListCreate.as_view(), name="blogpost-view-create"),
-    path(
-        "blogposts/<int:pk>/",
-        views.BlogPostRetrieveUpdateDestory.as_view(),
-        name="update",
-    ),
+    path("jobposts/", views.JobPostListCreate.as_view(), name="jobpost-view-create"),
+    path("jobposts/<int:pk>/", views.JobPostRetrieveUpdateDestory.as_view(), name="jobpost-update"),
+
 ]

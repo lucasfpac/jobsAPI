@@ -1,8 +1,8 @@
 from rest_framework import serializers # type: ignore
-from .models import BlogPost # type: ignore
+from .models import JobPost
 
 
-class BlogPostSerializer(serializers.ModelSerializer):
+class JobPostSerializer(serializers.ModelSerializer):
     class Meta:
-        model = BlogPost
-        fields = ["id", "title", "content", "published_date"]
+        model = JobPost
+        fields = ["id", "title", "amount", "type", "date", "WO"]

@@ -1,20 +1,20 @@
 from django.shortcuts import render # type: ignore
-from rest_framework import generics, status # type: ignore
-from rest_framework.response import Response # type: ignore
-from .models import BlogPost # type: ignore
-from .serializers import BlogPostSerializer
+from rest_framework import generics # type: ignore
+from .models import JobPost
+from .serializers import JobPostSerializer
+
+#usercreation
+from django.contrib.auth.forms import UserCreationForm   # type: ignore
 
 
-class BlogPostListCreate(generics.ListCreateAPIView):
-    queryset = BlogPost.objects.all()
-    serializer_class = BlogPostSerializer
-
-    def delete(self, request, *args, **kwargs):
-        BlogPost.objects.all().delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-class BlogPostRetrieveUpdateDestory(generics.RetrieveUpdateDestroyAPIView):
-    queryset = BlogPost.objects.all()
-    serializer_class = BlogPostSerializer
+class JobPostListCreate(generics.ListCreateAPIView):
+    queryset = JobPost.objects.all()
+    serializer_class = JobPostSerializer
+
+class JobPostRetrieveUpdateDestory(generics.RetrieveUpdateDestroyAPIView):
+    queryset = JobPost.objects.all()
+    serializer_class = JobPostSerializer
     lookup_field = "pk"
+
